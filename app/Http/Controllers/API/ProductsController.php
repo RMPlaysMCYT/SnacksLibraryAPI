@@ -19,6 +19,7 @@ class ProductsController extends Controller
             'product_name' => 'required|string',
             'details' => 'required|string',
             'price' => 'required|numeric',
+            
         ]);
 
         $product = Products::create($validatedData);
